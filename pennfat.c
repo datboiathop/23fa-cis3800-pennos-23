@@ -142,27 +142,20 @@ int main(int argc, char** argv) {
             }
         }
 
-        if (strcmp(parsed->commands[0][0], "read") == 0) {
-            char str[7];
-            f_read(1, 6, str);
-            str[6] = '\0';
-            printf("Read: %s\n", str);
-        }
+        // testing user read
+        // if (strcmp(parsed->commands[0][0], "read") == 0) {
+        //     char str[7];
+        //     f_read(1, 6, str);
+        //     str[6] = '\0';
+        //     printf("Read: %s\n", str);
+        // }
 
-        if (strcmp(parsed->commands[0][0], "read2") == 0) {
-            char str[290];
-            f_read(0, 289, str);
-            str[289] = '\0';
-            printf("Read: %s\n", str);
-        }
+        // if (strcmp(parsed->commands[0][0], "read2") == 0) {
+        //     char str[290];
+        //     f_read(0, 289, str);
+        //     str[289] = '\0';
+        //     printf("Read: %s\n", str);
+        // }
         
     }
 }
-
-// int main(int argc, char** argv) {
-//     f_open("Hi", 0);
-//     f_open("Hi", 1);
-//     f_open("Hi2", 0);
-//     f_open("Hi3", 2);
-//     printLL();
-// }
