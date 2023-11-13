@@ -1,0 +1,14 @@
+int mkfs(char* fSName, int blocks, int blockSize);
+int mount(char* fsName);
+int unmount();
+int touch(char** fileName, int lastFileIndex);
+int mv(char* sourceFile, char* destFile);
+int rm(char** fileNames, int lastFileIndex);
+int catWConcat(char** fileNames, int lastFileIndex, char* outputFileName);
+int catAConcat(char** fileNames, int lastFileIndex, char* outputFileName);
+int catW(char* outputFileName);
+int catA(char* outputFileName);
+int cpToFS(char* sourceFile, char* destFile, int fromHost);
+int cpToH(char* sourceFile, char* destFile);
+int ls();
+int chmd(char* fileName);
